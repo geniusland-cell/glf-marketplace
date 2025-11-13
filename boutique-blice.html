@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr-CG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      BLice Shopping - Articles Bébé Brazzaville | Puériculture Congo
+    </title>
+    <meta
+      name="description"
+      content="BLice Shopping - Boutique articles bébé à Brazzaville. Couches, vêtements bébé, jouets, produits de soin. Livraison Brazzaville."
+    />
+    <meta
+      name="keywords"
+      content="articles bébé Brazzaville, couches Congo, vêtements bébé, puériculture africaine, BLice Shopping, produits bébé Congo"
+    />
+    <meta name="author" content="BLice Shopping - GLF Marketplace" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="BLice Shopping - Articles Bébé Brazzaville"
+    />
+    <meta
+      property="og:description"
+      content="Boutique articles bébé à Brazzaville. Couches, vêtements, jouets et produits de soin de qualité."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://glf-marketplace.netlify.app/boutique-blice.html"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "BLice Shopping",
+        "description": "Boutique articles pour bébés à Brazzaville",
+        "url": "https://glf-marketplace.netlify.app/boutique-blice.html",
+        "telephone": "+242-06-767-8128",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Brazzaville",
+          "addressCountry": "CG"
+        },
+        "openingHours": "Mo-Su 08:00-20:00",
+        "priceRange": "$$",
+        "currenciesAccepted": "XAF"
+      }
+    </script>
+
+    <link rel="stylesheet" href="style-boutique.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html" style="text-decoration: none; color: inherit">
+            <span>GLF Marketplace</span>
+          </a>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#apropos">À Propos</a></li>
+          <li><a href="index.html#rejoindre">Rejoindre</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- En-tête de la boutique -->
+    <section class="boutique-header">
+      <div class="container">
+        <div class="boutique-hero">
+          <div class="boutique-logo">
+            <div class="logo-circle">👶</div>
+          </div>
+          <div class="boutique-info">
+            <h1>BLice Shopping - Articles Bébé Brazzaville</h1>
+            <p class="boutique-slogan">
+              Puériculture de Qualité - Confort Garanti
+            </p>
+            <p class="boutique-description">
+              Boutique spécialisée dans les articles pour bébés à Brazzaville.
+              Couches, vêtements, jouets éducatifs et produits de soin. Des
+              produits sûrs pour votre enfant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filtres et recherche -->
+    <section class="filters-section">
+      <div class="container">
+        <div class="filters-container">
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="🔍 Rechercher un article..."
+            />
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="vetement">Vêtements</button>
+            <button class="filter-btn" data-filter="couche">Couches</button>
+            <button class="filter-btn" data-filter="jouet">Jouets</button>
+            <button class="filter-btn" data-filter="accessoire">
+              Accessoires
+            </button>
+            <button class="filter-btn" data-filter="soin">Soins</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grille des articles -->
+    <section class="articles-section">
+      <div class="container">
+        <div class="articles-grid" id="articlesGrid">
+          <!-- Vêtement 1 -->
+          <div class="article-card" data-category="vetement">
+            <div class="article-image">
+              <div class="image-placeholder">👕 Body Bébé</div>
+            </div>
+            <div class="article-content">
+              <h3>Body Coton Bébé</h3>
+              <p class="article-description">
+                Body 100% coton pour nouveau-né, très confortable et doux
+              </p>
+              <div class="article-details">
+                <span class="price">4,500 FCFA</span>
+                <span class="size">Taille: 0-3 mois</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Body Coton Bébé"
+                data-price="4500"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Vêtement 2 -->
+          <div class="article-card" data-category="vetement">
+            <div class="article-image">
+              <div class="image-placeholder">👖 Pyjama Bébé</div>
+            </div>
+            <div class="article-content">
+              <h3>Pyjama Doux Bébé</h3>
+              <p class="article-description">
+                Pyjama chaud et doux pour les nuits confortables de bébé
+              </p>
+              <div class="article-details">
+                <span class="price">6,000 FCFA</span>
+                <span class="size">Taille: 6-12 mois</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Pyjama Doux Bébé"
+                data-price="6000"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Couche 1 -->
+          <div class="article-card" data-category="couche">
+            <div class="article-image">
+              <div class="image-placeholder">🧻 Pack Couches</div>
+            </div>
+            <div class="article-content">
+              <h3>Couches Premium</h3>
+              <p class="article-description">
+                Pack de 30 couches ultra-absorbantes, protection 12h
+              </p>
+              <div class="article-details">
+                <span class="price">8,000 FCFA</span>
+                <span class="size">Taille: M</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Couches Premium"
+                data-price="8000"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Couche 2 -->
+          <div class="article-card" data-category="couche">
+            <div class="article-image">
+              <div class="image-placeholder">🧻 Couches Nuit</div>
+            </div>
+            <div class="article-content">
+              <h3>Couches Nuit</h3>
+              <p class="article-description">
+                Couches spéciales nuit, protection renforcée 12 heures
+              </p>
+              <div class="article-details">
+                <span class="price">9,500 FCFA</span>
+                <span class="size">Taille: L</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Couches Nuit"
+                data-price="9500"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Jouet 1 -->
+          <div class="article-card" data-category="jouet">
+            <div class="article-image">
+              <div class="image-placeholder">🧸 Peluche Éducative</div>
+            </div>
+            <div class="article-content">
+              <h3>Peluche Éducative</h3>
+              <p class="article-description">
+                Peluche douce avec sons éducatifs, développement sensoriel
+              </p>
+              <div class="article-details">
+                <span class="price">5,500 FCFA</span>
+                <span class="size">Âge: 0-2 ans</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Peluche Éducative"
+                data-price="5500"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Jouet 2 -->
+          <div class="article-card" data-category="jouet">
+            <div class="article-image">
+              <div class="image-placeholder">🎮 Tapis Éveil</div>
+            </div>
+            <div class="article-content">
+              <h3>Tapis d'Éveil</h3>
+              <p class="article-description">
+                Tapis coloré avec jouets suspendus, stimulation visuelle
+              </p>
+              <div class="article-details">
+                <span class="price">12,000 FCFA</span>
+                <span class="size">Âge: 3-12 mois</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Tapis d'Éveil"
+                data-price="12000"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Accessoire 1 -->
+          <div class="article-card" data-category="accessoire">
+            <div class="article-image">
+              <div class="image-placeholder">🍼 Biberon</div>
+            </div>
+            <div class="article-content">
+              <h3>Biberon Anti-Colique</h3>
+              <p class="article-description">
+                Biberon 250ml avec système anti-colique, sécurité bébé
+              </p>
+              <div class="article-details">
+                <span class="price">3,500 FCFA</span>
+                <span class="size">Capacité: 250ml</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Biberon Anti-Colique"
+                data-price="3500"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Accessoire 2 -->
+          <div class="article-card" data-category="accessoire">
+            <div class="article-image">
+              <div class="image-placeholder">🛁 Sucette</div>
+            </div>
+            <div class="article-content">
+              <h3>Sucette Orthopédique</h3>
+              <p class="article-description">
+                Sucette silicone, forme orthopédique, développement sain
+              </p>
+              <div class="article-details">
+                <span class="price">2,000 FCFA</span>
+                <span class="size">Âge: 0-6 mois</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Sucette Orthopédique"
+                data-price="2000"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Soin 1 -->
+          <div class="article-card" data-category="soin">
+            <div class="article-image">
+              <div class="image-placeholder">🧴 Lait Corporel</div>
+            </div>
+            <div class="article-content">
+              <h3>Lait Hydratant Bébé</h3>
+              <p class="article-description">
+                Lait corporel pour peau sensible de bébé, hypoallergénique
+              </p>
+              <div class="article-details">
+                <span class="price">4,000 FCFA</span>
+                <span class="size">Volume: 200ml</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Lait Hydratant Bébé"
+                data-price="4000"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Soin 2 -->
+          <div class="article-card" data-category="soin">
+            <div class="article-image">
+              <div class="image-placeholder">🛡️ Crème Change</div>
+            </div>
+            <div class="article-content">
+              <h3>Crème Change</h3>
+              <p class="article-description">
+                Crème protectrice pour changes, prévention irritations
+              </p>
+              <div class="article-details">
+                <span class="price">2,500 FCFA</span>
+                <span class="size">Volume: 100ml</span>
+              </div>
+              <button
+                class="whatsapp-btn"
+                data-product="Crème Change"
+                data-price="2500"
+              >
+                📱 Commander via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>BLice Shopping Brazzaville</h3>
+            <p><strong>📞 Commander:</strong> +242 06 767 8128</p>
+            <p><strong>📧 Email:</strong> mampouyaraphael04@gmail.com</p>
+            <p><strong>📍 Livraison:</strong> Brazzaville, Congo</p>
+          </div>
+          <div class="footer-links">
+            <h3>Navigation</h3>
+            <a href="index.html">Accueil Marketplace</a>
+            <a href="boutique-vhh.html">Ets V.H.H</a>
+            <a href="index.html#rejoindre">Rejoindre Marketplace</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 GLF Marketplace - BLice Shopping. Puériculture
+            Brazzaville.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Logo GLF en bas à droite -->
+    <div class="logo-glf-bottom">
+      <div class="logo-text">GLF</div>
+      <div class="logo-subtitle">Marketplace</div>
+    </div>
+
+    <script src="script-boutique.js"></script>
+  </body>
+</html>

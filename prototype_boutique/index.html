@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belle Afrique - Décoration & Mobilier</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h1>🌺 Belle Afrique</h1>
+        </div>
+        <nav class="nav">
+          <a href="#accueil">Accueil</a>
+          <a href="#produits">Produits</a>
+          <a href="#apropos">À Propos</a>
+          <a href="#footer">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <h2>L'Art de la Décoration Africaine</h2>
+        <p>
+          Découvrez notre collection unique de meubles et objets décoratifs
+          inspirés des riches traditions africaines
+        </p>
+        <button class="cta-button" onclick="scrollToProducts()">
+          Explorer la Collection
+        </button>
+      </div>
+      <div class="hero-flower-decoration"></div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="about">
+      <div class="container">
+        <h2 class="section-title">Notre Histoire</h2>
+        <div class="about-content">
+          <p>
+            Belle Afrique célèbre l'artisanat africain à travers des créations
+            uniques qui mêlent tradition et modernité. Chaque pièce est conçue
+            avec passion par des artisans locaux.
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">🎨</div>
+              <h3>Artisanat Authentique</h3>
+              <p>Créations faites main par des artisans africains</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🌿</div>
+              <h3>Matériaux Naturels</h3>
+              <p>Bois, terre cuite et tissus wax authentiques</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">💫</div>
+              <h3>Design Unique</h3>
+              <p>Pièces exclusives inspirées des cultures africaines</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits" class="products">
+      <div class="container">
+        <h2 class="section-title">Nos Créations</h2>
+        <div class="products-grid">
+          <!-- Produit 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/image1.jpg" alt="Fauteuil Royal Baoulé" />
+
+              <div class="flower-decoration"></div>
+            </div>
+            <div class="product-info">
+              <h3>Fauteuil Royal Baoulé</h3>
+              <p class="price">85,000 XAF</p>
+              <p class="description">
+                Fauteuil en bois sculpté avec tissu wax authentique
+              </p>
+              <button
+                class="whatsapp-btn"
+                onclick="commanderWhatsApp('Fauteuil Royal Baoulé', '85000')"
+              >
+                📱 Commander sur WhatsApp
+              </button>
+              <button class="details-btn" onclick="afficherDetails(1)">
+                Voir détails
+              </button>
+            </div>
+          </div>
+
+          <!-- Produit 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/image2.jpg" alt="Vase Fleurs Tropicales" />
+
+              <div class="flower-decoration"></div>
+            </div>
+            <div class="product-info">
+              <h3>Vase Fleurs Tropicales</h3>
+              <p class="price">25,000 XAF</p>
+              <p class="description">
+                Vase en céramique peint à la main avec motifs floraux
+              </p>
+              <button
+                class="whatsapp-btn"
+                onclick="commanderWhatsApp('Vase Fleurs Tropicales', '25000')"
+              >
+                📱 Commander sur WhatsApp
+              </button>
+              <button class="details-btn" onclick="afficherDetails(2)">
+                Voir détails
+              </button>
+            </div>
+          </div>
+
+          <!-- Produit 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/image3.jpg" alt="Table Basse Ébène" />
+
+              <div class="flower-decoration"></div>
+            </div>
+            <div class="product-info">
+              <h3>Table Basse Ébène</h3>
+              <p class="price">45,000 XAF</p>
+              <p class="description">
+                Table basse en ébène massif avec incrustations
+              </p>
+              <button
+                class="whatsapp-btn"
+                onclick="commanderWhatsApp('Table Basse Ébène', '45000')"
+              >
+                📱 Commander sur WhatsApp
+              </button>
+              <button class="details-btn" onclick="afficherDetails(3)">
+                Voir détails
+              </button>
+            </div>
+          </div>
+
+          <!-- Produit 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="images/image4.jpg" alt="Miroir Soleil Africain" />
+
+              <div class="flower-decoration"></div>
+            </div>
+            <div class="product-info">
+              <h3>Miroir Soleil Africain</h3>
+              <p class="price">35,000 XAF</p>
+              <p class="description">
+                Miroir décoratif avec cadre en bois sculpté
+              </p>
+              <button
+                class="whatsapp-btn"
+                onclick="commanderWhatsApp('Miroir Soleil Africain', '35000')"
+              >
+                📱 Commander sur WhatsApp
+              </button>
+              <button class="details-btn" onclick="afficherDetails(4)">
+                Voir détails
+              </button>
+            </div>
+          </div>
+
+          <!-- Produit 5 -->
+          <div class="product-card">
+            <div class="product-image">
+              <!-- Remplacez par <img src="images/lampe-masque.jpg" alt="Lampe Masque Tribal"> -->
+              <div class="image-placeholder">Image Lampe</div>
+              <div class="flower-decoration"></div>
+            </div>
+            <div class="product-info">
+              <h3>Lampe Masque Tribal</h3>
+              <p class="price">55,000 XAF</p>
+              <p class="description">
+                Lampe d'ambiance inspirée des masques traditionnels
+              </p>
+              <button
+                class="whatsapp-btn"
+                onclick="commanderWhatsApp('Lampe Masque Tribal', '55000')"
+              >
+                📱 Commander sur WhatsApp
+              </button>
+              <button class="details-btn" onclick="afficherDetails(5)">
+                Voir détails
+              </button>
+            </div>
+          </div>
+
+          <!-- Produit 6 -->
+          <div class="product-card">
+            <div class="product-image">
+              <!-- Remplacez par <img src="images/pot-fleurs.jpg" alt="Pot Fleurs Ancestral"> -->
+              <div class="image-placeholder">Image Pot</div>
+              <div class="flower-decoration"></div>
+            </div>
+            <div class="product-info">
+              <h3>Pot Fleurs Ancestral</h3>
+              <p class="price">18,000 XAF</p>
+              <p class="description">
+                Pot en terre cuite avec gravures traditionnelles
+              </p>
+              <button
+                class="whatsapp-btn"
+                onclick="commanderWhatsApp('Pot Fleurs Ancestral', '18000')"
+              >
+                📱 Commander sur WhatsApp
+              </button>
+              <button class="details-btn" onclick="afficherDetails(6)">
+                Voir détails
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Détails Produit -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="fermerModal()">&times;</span>
+        <div class="modal-body">
+          <div class="modal-image">
+            <!-- Remplacez par <img src="images/produit-details.jpg" alt="Produit"> -->
+            <div class="image-placeholder-large">Image Produit</div>
+          </div>
+          <div class="modal-info">
+            <h2 id="modalTitle">Nom du Produit</h2>
+            <p id="modalPrice" class="price">0 XAF</p>
+            <p id="modalDescription">Description détaillée du produit...</p>
+            <div class="modal-features">
+              <h4>Caractéristiques :</h4>
+              <ul id="modalFeatures">
+                <li>Matériaux naturels</li>
+                <li>Fait main</li>
+                <li>Inspiration africaine authentique</li>
+              </ul>
+            </div>
+            <button
+              class="whatsapp-btn large"
+              onclick="commanderModalWhatsApp()"
+            >
+              📱 Commander sur WhatsApp
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🌺 Belle Afrique</h3>
+            <p>Votre destination pour la décoration africaine authentique</p>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>📞 +242 06 767 8128</p>
+            <p>📧 contact@belleafrique.com</p>
+            <p>📍 Brazzaville, Congo</p>
+          </div>
+          <div class="footer-section">
+            <h4>Liens Rapides</h4>
+            <a href="#accueil">Accueil</a>
+            <a href="#produits">Produits</a>
+            <a href="#apropos">À Propos</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Belle Afrique. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

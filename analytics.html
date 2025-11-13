@@ -1,0 +1,42 @@
+<!-- Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "GA_MEASUREMENT_ID");
+</script>
+
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="TON_CODE_VERIFICATION" />
+
+<!-- Structured Data pour le site entier -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "GLF Marketplace Brazzaville",
+        "url": "https://glf-marketplace.netlify.app",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://glf-marketplace.netlify.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "GLF Marketplace",
+        "url": "https://glf-marketplace.netlify.app",
+        "logo": "https://glf-marketplace.netlify.app/assets/logo-glf.png",
+        "description": "Marketplace des boutiques locales de Brazzaville, Congo"
+      }
+    ]
+  }
+</script>

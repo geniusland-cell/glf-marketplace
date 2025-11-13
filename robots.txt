@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://glf-marketplace.netlify.app/sitemap.xml
+
+# Optimisation pour les moteurs de recherche
+Crawl-delay: 1
