@@ -1,0 +1,181 @@
+GLF MARKETPLACE - PLAN TECHNIQUE CORRIGÉ
+=========================================
+
+STATUT ACTUEL: ✅ SITE DÉJÀ EN LIGNE sur Netlify
+URL: glf-marketplace.netlify.app
+
+ARCHITECTURE FINALE
+===================
+
+🏗️ Stack Technique:
+• Frontend: React.js + Vite (Migration progressive)
+• Backend: Node.js + Express.js (Nouveau)
+• Base de données: PostgreSQL + MongoDB (Hybride)
+• Authentification: JWT
+• Hébergement: Netlify (EXISTANT) + Render (Backend)
+
+📊 Structure Base de Données Hybride:
+├── PostgreSQL (Données Structurées)
+│   ├── Utilisateurs & Authentification
+│   ├── Boutiques (Infos légales) 
+│   ├── Commandes & Transactions
+│   ├── Paiements Sécurisés
+│   └── Catégories Principales
+└── MongoDB (Données Flexibles)
+    ├── Produits (Attributs variables)
+    ├── Avis & Commentaires
+    ├── Contenu Dynamique
+    └── Catalogue Avancé
+
+STRUCTURE DES FICHIERS MISE À JOUR
+==================================
+
+glf-marketplace/
+│
+├── 📁 frontend-react/          # NOUVEAU: Migration progressive
+│   ├── 📁 src/
+│   │   ├── 📁 components/
+│   │   ├── 📁 pages/
+│   │   └── 📁 hooks/
+│   └── package.json
+│
+├── 📁 backend-api/             # NOUVEAU: API Node.js
+│   ├── 📁 controllers/
+│   ├── 📁 models/
+│   ├── 📁 routes/
+│   └── server.js
+│
+├── 📁 database/                # NOUVEAU: Bases de données
+│   ├── 📁 sql/
+│   ├── 📁 nosql/
+│   └── migrations/
+│
+└── 📁 current-website/         # EXISTANT: Votre site actuel Netlify
+    ├── index.html
+    ├── style.css
+    ├── boutique-vhh.html
+    ├── boutique-blice.html
+    ├── boutique-princi-hair.html
+    ├── boutique-decoration.html
+    └── 📁 assets/
+
+PLAN DE MIGRATION INTELLIGENTE
+===============================
+
+PHASE 1: DÉVELOPPEMENT BACKEND (Semaine 1)
+------------------------------------------
+✅ Jour 1-2: Setup environnement
+   - Comptes Render, ElephantSQL, MongoDB Atlas
+   - Installation outils locaux
+
+✅ Jour 3-5: API Backend
+   - Structure base de données
+   - CRUD produits et boutiques
+   - Authentification JWT
+
+✅ Jour 6-7: Migration données existantes
+   - Script import produits actuels
+   - Test API complète
+
+PHASE 2: FRONTEND HYBRIDE (Semaine 2)
+-------------------------------------
+✅ Jour 1-3: React partiel
+   - Pages principales en React
+   - Conservation design existant
+   - Intégration API
+
+✅ Jour 4-5: Fonctionnalités avancées
+   - Recherche en temps réel
+   - Filtres dynamiques
+   - Panier utilisateur
+
+✅ Jour 6-7: Administration
+   - Dashboard admin
+   - Gestion boutiques
+   - Statistiques
+
+PHASE 3: BASCULE PROGRESSIVE (Semaine 3)
+----------------------------------------
+✅ Boutique par boutique migration
+   - Ets V.H.H d'abord
+   - BLice Shopping ensuite
+   - Princi Hair Business
+   - Décoration & Mobilier
+
+✅ Tests intensifs
+✅ Formation utilisation
+✅ Documentation
+
+PHASE 4: OPTIMISATION (Semaine 4)
+---------------------------------
+✅ Performance optimisation
+✅ SEO avancé
+✅ Analytics
+✅ Backup systems
+
+CONFIGURATION HÉBERGEMENT CORRIGÉE
+==================================
+
+FRONTEND: ✅ NETLIFY (EXISTANT - ON GARDE!)
+• URL: glf-marketplace.netlify.app
+• Statut: DÉJÀ EN LIGNE
+• Action: Migration progressive
+
+BACKEND: 🆕 RENDER (NOUVEAU)
+• URL: glf-api.onrender.com
+• Plan: Free Tier
+• Usage: API Node.js
+
+POSTGRESQL: 🆕 ELEPHANTSQL (NOUVEAU)
+• Plan: Tiny Turtle (Gratuit)
+• Usage: Données structurées
+
+MONGODB: 🆕 ATLAS (NOUVEAU) 
+• Plan: Shared (Gratuit)
+• Usage: Données flexibles
+
+AVANTAGES DE CETTE APPROCHE
+===========================
+
+✅ ZERO INTERRUPTION DE SERVICE
+• Votre site reste en ligne pendant le dev
+• Les boutiques continuent de vendre
+
+✅ MIGRATION EN DOUCEUR  
+• Boutique par boutique
+• Tests à chaque étape
+• Retour arrière possible
+
+✅ DESIGN PRÉSERVÉ
+• Conservation de votre identité visuelle
+• Améliorations progressives
+• Expérience utilisateur maintenue
+
+✅ ÉVOLUTIVITÉ
+• Base solide pour croissance future
+• Ajout facile de nouvelles boutiques
+• Fonctionnalités extensibles
+
+DONNÉES EXISTANTES À MIGRER
+===========================
+
+BOUTIQUES ACTUELLES (4):
+• Ets V.H.H - 8 produits
+• BLice Shopping - Articles bébé  
+• Princi Hair Business - 27 produits
+• Décoration & Mobilier - 60 produits
+
+STRUCTURE PRODUITS À CRÉER:
+• 95+ produits au total
+• 4 catégories principales
+• Images existantes à conserver
+• Prix et descriptions à migrer
+
+PROCHAINES ACTIONS IMMÉDIATES
+=============================
+
+1. ✅ Sauvegarder ce plan corrigé
+2. 🔧 Installer Node.js et Git (si pas fait)
+3. 🌐 Créer comptes Render + Databases
+4. 📊 Exporter données produits actuels
+5. 🚀 Commencer développement API

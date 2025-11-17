@@ -1,4 +1,3 @@
-/* Reset et base */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +18,6 @@ body {
   padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -62,7 +60,6 @@ body {
   color: #dc241f;
 }
 
-/* Section Hero avec Fondateur */
 .hero {
   padding: 120px 20px 80px;
   text-align: center;
@@ -113,7 +110,7 @@ body {
   justify-content: center;
   border: 4px solid #dc241f;
   overflow: hidden;
-  background: transparent; /* IMPORTANT : PAS DE BACKGROUND */
+  background: transparent;
 }
 
 .founder-info-hero h3 {
@@ -156,7 +153,6 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* Cercle de la boutique */
 .boutique-circle {
   width: 120px;
   height: 120px;
@@ -174,7 +170,6 @@ body {
   color: white;
 }
 
-/* Informations boutique */
 .boutique-info {
   flex: 1;
   display: flex;
@@ -218,7 +213,6 @@ body {
   box-shadow: 0 5px 15px rgba(220, 36, 31, 0.3);
 }
 
-/* Section Fondateur détaillée */
 .founder-detailed {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -227,7 +221,6 @@ body {
   align-items: start;
 }
 
-/* PHOTO LARGE - SANS BACKGROUND */
 .founder-photo-large {
   width: 100%;
   height: 400px;
@@ -238,7 +231,7 @@ body {
   border: 5px solid #dc241f;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  background: transparent; /* IMPORTANT : PAS DE BACKGROUND */
+  background: transparent;
 }
 
 .founder-bio h3 {
@@ -272,7 +265,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Sections À Propos et Rejoindre */
 .about-section,
 .join-section {
   padding: 80px 20px;
@@ -319,7 +311,6 @@ body {
   margin-top: 30px !important;
 }
 
-/* Footer */
 .footer {
   background: #333;
   color: white;
@@ -361,7 +352,6 @@ body {
   border-top: 1px solid #555;
 }
 
-/* Logo GLF en bas à droite */
 .logo-glf-bottom {
   position: fixed;
   bottom: 20px;
@@ -389,7 +379,6 @@ body {
   margin-top: 2px;
 }
 
-/* ===== STYLES POUR LES IMAGES ===== */
 .founder-photo-hero img,
 .founder-photo-large img {
   width: 100%;
@@ -430,7 +419,7 @@ body {
     gap: 15px;
   }
 }
-/* SOLUTION URGENTE - FORCER VISIBILITÉ IMAGES */
+
 .founder-photo-hero img,
 .founder-photo-large img,
 .boutique-circle img {
